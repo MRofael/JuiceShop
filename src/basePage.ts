@@ -12,7 +12,7 @@ export class BasePage {
         this.driver = driver
         this.url = url
     }
-    async navigate(): Promise<void> {
+    async navigate() {
         return await this.driver.get(this.url)
     }
     /**
